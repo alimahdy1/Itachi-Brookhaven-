@@ -261,35 +261,18 @@ game.StarterGui:SetCore("SendNotification", {
     Duration = 5;
 })
 
-loadstring(game:HttpGet(("https://raw.githubusercontent.com/mhmdsx/ui-TKX/refs/heads/main/ui%20TKX.txt")))()
-MakeWindow({
-Hub = {
-Title = "TRUNKS HUB || V0.3 || Brookhaven RB",
-Animation = "سكربت TRUNKS HUB"
-},
-Key = {
-KeySystem = false,
-Title = "Key System",
-Description = "",
-KeyLink = "",
-Keys = {"12924"},
-Notifi = {
-Notifications = true,
-CorrectKey = "Running the Script...",
-Incorrectkey = "The key is incorrect",
-CopyKeyLink = "Copied to Clipboard"
-}
-}
+
+local OrionLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/tojiBrookhaven/Toji/refs/heads/main/Mar"))()
+
+local Window = OrionLib:MakeWindow({
+    Name = "TRUNKS HUB || V0.3 || Brookhaven RB",
+    HidePremium = false,
+    SaveConfig = true,
+    IntroText = "سكربت TRUNKS HUB"",
+    IntroIcon = "rbxassetid://",
+    ConfigFolder = "OrionTest"
 })
 
-MinimizeButton({
-Image = "rbxassetid://95595481924491",
-Size = {40, 40},
-Color = Color3.fromRGB(10, 10, 10),
-Corner = true,
-Stroke = true,
-StrokeColor = Color3.fromRGB(15, 15, 15)
-})
 local Tab = Window:MakeTab({
     Name = "معلومات السكربت",
     Icon = "rbxassetid://95595481924491",",
